@@ -66,6 +66,15 @@ a:visited {
     font-family: 'Courier New', Courier, monospace;
 }
 
+#share__tryagain {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #footer {
     text-align: center;
 }
@@ -102,4 +111,13 @@ a:visited {
 
 #share {
     text-align: center;
+}
+
+.share__button {
+    color:darkred; 
+    background-color: white; 
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 3px;
 }
