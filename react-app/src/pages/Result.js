@@ -34,6 +34,7 @@ const ShareButtons = () => {
     const languageName = quizData.results[resultID].title
 
     const twitterLink = `http://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&hashtags=${languageName}&text=` + encodeURIComponent(`Which Programming are you? Turns out I'm ${languageName}! Let me know which one you are on the Programming Language Quiz`)
+    const fbLink = `https://www.facebook.com/sharer.php?u=${encodeURIComponent(window.location.href)}`
 
     return ( 
         <div id='share'>
@@ -41,7 +42,9 @@ const ShareButtons = () => {
             <a href={twitterLink} target="_blank" rel="noopener noreferrer">
                 <div className='share__button'><i className="fa fa-twitter" aria-hidden="true"></i></div>
             </a>
-            <div className='share__button'><i className="fa fa-facebook" aria-hidden="true"></i></div><br/>
+            <a href={fbLink} target="_blank" rel="noopener noreferrer">
+                <div className='share__button'><i className="fa fa-facebook" aria-hidden="true"></i></div><br/>
+            </a>
             <Link to ="/"><button id='share__tryagain'>Take the Quiz</button></Link>
         </div>
     )
