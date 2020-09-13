@@ -30,8 +30,8 @@ const ResultInfo = () => {
 const ShareButtons = () => ( 
     <div id='share'>
         <span>Share your result:</span>
-        <div class='share__button'><i class="fa fa-twitter" aria-hidden="true"></i></div>
-        <div class='share__button'><i class="fa fa-facebook" aria-hidden="true"></i></div><br/>
+        <div className='share__button'><i className="fa fa-twitter" aria-hidden="true"></i></div>
+        <div className='share__button'><i className="fa fa-facebook" aria-hidden="true"></i></div><br/>
         <Link to ="/"><button id='share__tryagain'>Take the Quiz</button></Link>
     </div>
 )

@@ -38,8 +38,26 @@ const QuizBody = () => {
     }
 
     const evalResult = () => {
-        // TODO: add the result evaluation
-        return 0
+        var categoryScores = Array(quizData.results.length).fill(0)
+
+        for (var i = 0; i < choices.length; i++) {
+            const categoryThatGetsAPoint = quizData.questions[i].options[choices[i]].result
+            // debug
+            console.log(`Question #${i+1} point for ${quizData.results[categoryThatGetsAPoint].title}`)
+            categoryScores[categoryThatGetsAPoint] += 1
+        }
+        
+        const findMaxIndex = (arr) => {
+            var maxIndex = 0
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] > arr[maxIndex]) {
+                    maxIndex = i
+                }
+            }
+            return maxIndex
+        }
+
+        return findMaxIndex(categoryScores)
     }
 
     return (
