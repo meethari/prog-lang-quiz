@@ -93,11 +93,11 @@ const Question = ({questionNum, question, choices, setChoices}) => {
 
     return (
         <div className='question'>
-            <span>#{String(questionNum + 1)}. </span><span className='question__title'>{question.title}</span><br/><br/>
+            <span className='question__title'>#{String(questionNum + 1)}. {question.title}</span><br/><br/><br/>
             {question.options.map((option, optionNum) => (
-                    <>
-                        <label className='question__label'><input className='question__radio' type="radio" name={questionNum} onChange={choiceUpdater(optionNum)} value={optionNum} checked={isRadioChecked(optionNum)}/>{option.title}</label><br/>
-                    </>
+                    <div className='question__option'>
+                        <label className='question__label'><input className='question__radio' type="radio" name={questionNum} onChange={choiceUpdater(optionNum)} value={optionNum} checked={isRadioChecked(optionNum)}/>{option.title}</label>
+                    </div>
                     )
                 )
             }

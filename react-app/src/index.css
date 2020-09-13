@@ -83,15 +83,21 @@ a:visited {
 }
 
 .question {
-  margin: 0px 50px 50px 50px;
+  margin: 0px 20% 50px 20%;
   padding: 50px;
   background-color: white;
   color: black;
   box-shadow: 2px 2px 8px #888888;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
-.question__label {
-  background-color: white;
+.question__title {
+  font-weight: bold;
+}
+
+.question__option {
+  margin-bottom: 10px;
 }
 
 #quizbody__submitrow {
@@ -113,6 +119,10 @@ a:visited {
   padding: 10px;
   margin: 5% auto;
   width: 80%;
+}
+
+#footer {
+  font-size: 20px;
 }
 
 #footer hr {
