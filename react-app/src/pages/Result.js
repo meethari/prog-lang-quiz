@@ -27,14 +27,25 @@ const ResultInfo = () => {
     )
 }
 
-const ShareButtons = () => ( 
-    <div id='share'>
-        <span>Share your result:</span>
-        <div className='share__button'><i className="fa fa-twitter" aria-hidden="true"></i></div>
-        <div className='share__button'><i className="fa fa-facebook" aria-hidden="true"></i></div><br/>
-        <Link to ="/"><button id='share__tryagain'>Take the Quiz</button></Link>
-    </div>
-)
+const ShareButtons = () => {
+
+    var { resultID } = useParams()
+    resultID = decodeURIComponent(resultID)
+    const languageName = quizData.results[resultID].title
+
+    const twitterLink = `http://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&hashtags=${languageName}&text=` + encodeURIComponent(`Which Programming are you? Turns out I'm ${languageName}! Let me know which one you are on the Programming Language Quiz`)
+
+    return ( 
+        <div id='share'>
+            <span>Share your result:</span>
+            <a href={twitterLink} target="_blank" rel="noopener noreferrer">
+                <div className='share__button'><i className="fa fa-twitter" aria-hidden="true"></i></div>
+            </a>
+            <div className='share__button'><i className="fa fa-facebook" aria-hidden="true"></i></div><br/>
+            <Link to ="/"><button id='share__tryagain'>Take the Quiz</button></Link>
+        </div>
+    )
+}
 
 const ResultHeader = () => (
     <div id='header--result'>
