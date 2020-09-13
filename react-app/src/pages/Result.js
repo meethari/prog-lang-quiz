@@ -20,9 +20,9 @@ const ResultInfo = () => {
     return (
         <div id='result'>
             <span id='result__username'>{name}, you are...</span><br/>
-            <img id='result__img' src={result.img} height="300px"/><br/>
-            <span id='result__name'>{result.title}</span><br/>
-            <div id='result__description'>{result.description}</div>
+            <img id='result__img' src={result.img} height="200px"/><br/><br/>
+            <span id='result__name'>{result.title}</span><br/><br/>
+            <div id='result__description'>{result.description}</div><br/><br/>
         </div>
     )
 }
