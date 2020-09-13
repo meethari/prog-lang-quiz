@@ -42,7 +42,7 @@ const quizData = {
                     result: 2
                 },
                 {
-                    title: "I just chill, listening to the music.",
+                    title: "I just chill. I'll talk with anyone who approaches me first.",
                     result: 1
                 },
                 {
@@ -67,7 +67,7 @@ const quizData = {
                     result: 1
                 },
                 {
-                    title: "A Pumpkin Spice Latte, just the way I like it.",
+                    title: "My custom order of Pumpkin Spice Latte at Starbucks",
                     result: 0
                 }
             ]
@@ -172,22 +172,22 @@ const quizData = {
         {
             title: 'JavaScript',
             img: '/img/js.png',
-            description: "You're an easy going, no frills person. You like to deal with life as it happens, and are willing to tackle problems in any shape or form. Just like JavaScript, which doesn't ask you what type your variables are. It just goes with the flow. You're also not afraid make mistakes, as you know making mistakes is a great way to learn. JavaScript is also like that - it provides very little type checking."
+            description: "You're an easy going, no frills person. You like to deal with life as it happens, and are willing to tackle problems in any shape or form. Just like JavaScript, which doesn't ask you what type your variables are. It just goes with the flow. You also have a good aesthetic sense and dress fashionably. JavaScript helps developers build the frontend of their applications, so it's really great at aesthetics!"
         },
         {
             title: 'Python',
-            img: '',
-            description: 'You like keeping things sweet and simple. Like Python'
+            img: '/img/python.png',
+            description: "You're really easy to get to know, just like Python. You're a straightforward person who believes they don't understand something unless they can explain it simply. You have a very minimalist aesthetic, just like Python! Python's philosophy promotes the importance of simplicity and clarity. Python is the go to tool for doing Machine Learning and Natural Language Processing these days, although C libraries handle the hard math."
         },
         {
             title: 'C',
-            img: '',
-            description: 'You\'re an old school type. You\'re obsessed with the details. You believe nothing beats a hard day of work. Like C. You like to cut the bullshit.'
+            img: '/img/c.png',
+            description: "You're an old school type. You're very self reliant and prefer doing things on your own. C also has the same expectations of programmers, as it doesn't offer a lot of features other languages do such as object-oriented programming support and garbage collection. You're very detail oriented, just like C which allows you to do low level manipulations. It takes time to get to know you. Once someone does though, you're a reliable friend, just like how C has been a mainstay of the tech landscape."
         },
         {
             title: 'Java',
-            img: '',
-            description: 'You\'re the reliable type. Maybe a bit boastful, just like Java which likes reminding people that it runs on 3bn devices. You\'re easy to get along with, just like Java which plays nice with every platform.'
+            img: '/img/java.jpg',
+            description: "You've definitely heard of Java. And everyone's definitely heard of you. You're the kind of person who would get along with anyone. Java is too! Java code runs on the JVM, which means Java code plays nice with everyone - Windows, Macs, Linux, Android Phones. You're a talkative person, just like how Java code is very verbose. You can be a bit obnoxious at times, just like how Java likes to say it runs on 3bn devices. Just kidding about that last one, haha!"
         }
     ]
 }

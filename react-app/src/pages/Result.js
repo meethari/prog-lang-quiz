@@ -13,7 +13,9 @@ const Result = () => (
 )
 
 const ResultInfo = () => {
-    const { resultID, name } = useParams()
+    var { resultID, name } = useParams()
+    resultID = decodeURIComponent(resultID)
+    name = decodeURIComponent(name)
     const result = quizData.results[resultID]
     return (
         <div id='result'>
