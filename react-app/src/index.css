@@ -57,15 +57,6 @@ a:visited {
   border-right: 0;
 }
 
-#entry__submit {
-  margin-top: 20px;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
 #share__tryagain {
   margin-top: 20px;
   border: 2px solid black;
@@ -77,6 +68,18 @@ a:visited {
 
 #footer {
   text-align: center;
+}
+
+#entry__submit {
+  margin-top: 20px;
+}
+
+.submit {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .question {
@@ -91,7 +94,27 @@ a:visited {
   background-color: white;
 }
 
-#footer_hr {
+#quizbody__submitrow {
+  text-align: center;
+}
+
+#quizbody__alertcontainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#quizbody__alert {
+  background-color: darkred;
+  border: 1px solid saddlebrown;
+  padding: 10px;
+  margin: 5% auto;
+  width: 80%;
+}
+
+#footer hr {
   border: 1px solid white;
 }
 

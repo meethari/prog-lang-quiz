@@ -71,6 +71,28 @@ const quizData = {
                     result: 0
                 }
             ]
+        },
+        {
+            title: "You're working on a group project, and it's the day before the deadline. Most of the work is done, but it's all disorganized and doesn't look visually appealing. What do you do?",
+            options: [
+                {
+                    title: "Design - what's that?",
+                    result: 2
+                },
+                {
+                    title: "Call up your teammates and say 'I know you've all worked hard, but we need to put on the finishing touches'!",
+                    result: 3
+                },
+                {
+                    title: "Put stuff together in a neat, if not plain design, and call it a day.",
+                    result: 1
+                },
+                {
+                    title: "Pull out the crafts box and start decorating. It's gotta look FAABULOUS!",
+                    result: 0
+                },
+                
+            ]
         }
     ],
     results: [

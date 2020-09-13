@@ -26,9 +26,9 @@ const Entry = () => {
             <span id='entry__info'>What's your name?</span><br/>
             <input id='entry__input' onChange={inputHandler} value={nameText}></input><br/>
             {nameText === "" ? (
-                <button id='entry__submit' disabled>Take the Quiz</button>
+                <button id='entry__submit' className='submit' disabled>Take the Quiz</button>
             ) : (
-                <Link to={"/quiz/" + encodeURIComponent(nameText)}><button id='entry__submit'>Take the Quiz</button></Link>
+                <Link to={"/quiz/" + encodeURIComponent(nameText)}><button id='entry__submit' className='submit'>Take the Quiz</button></Link>
             )}
             
         </div>
