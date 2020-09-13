@@ -31,27 +31,6 @@ result = {
 const quizData = {
     questions: [
         {
-            title: "What drink would you prefer to drink in the morning?",
-            options: [
-                {
-                    title: "Black Coffee",
-                    result: 2
-                }, 
-                {
-                    title: "Orange Juice",
-                    result: 1
-                },
-                {
-                    title: "Water",
-                    result: 3
-                },
-                {
-                    title: "Wine",
-                    result: 0
-                }
-            ]
-        },
-        {
             title: "You're at a party where you don't know anybody. What do you do?",
             options: [
                 {
@@ -68,6 +47,48 @@ const quizData = {
                 },
                 {
                     title: "I make small talk with the people around me.",
+                    result: 0
+                }
+            ]
+        },
+        {
+            title: "What's your go-to morning drink?",
+            options: [
+                {
+                    title: "Coffee",
+                    result: 3
+                }, 
+                {
+                    title: "Tea",
+                    result: 2
+                },
+                {
+                    title: "Soylent",
+                    result: 1
+                },
+                {
+                    title: "A Pumpkin Spice Latte, just the way I like it.",
+                    result: 0
+                }
+            ]
+        },
+        {
+            title: "What did you think about math in high school?",
+            options: [
+                {
+                    title: "Loved it! I'm really good at it!",
+                    result: 2
+                }, 
+                {
+                    title: "I like it, but I prefer doing my arithmetic on a calculator!",
+                    result: 1
+                },
+                {
+                    title: "I'm alright at it. I get by.",
+                    result: 3
+                },
+                {
+                    title: "I'm not a fan.",
                     result: 0
                 }
             ]
@@ -93,13 +114,65 @@ const quizData = {
                 },
                 
             ]
+        },
+        {
+            title: "You're relaxing after a long hard day of online classes, watching whatever people are watching these days on Netflix. You just realised that you forgot to turn in an assignment. What do you do?",
+            options: [
+                {
+                    title: "Ehh it's fine, I'll deal with it",
+                    result: 0
+                }, 
+                {
+                    title: "PANIC!",
+                    result: 2
+                }
+            ]
+        },
+        {
+            title: "What are you more likely to be found doing in a boring class?",
+            options: [
+                {
+                    title: "Doodling a picture of the professor",
+                    result: 0
+                }, 
+                {
+                    title: "Calculating how much you can get on the next midterm and still save your grade.",
+                    result: 1
+                }
+            ]
+        },
+        {
+            title: "You have a lot of books at home. You really need a bookshelf. What do you do?",
+            options: [
+                {
+                    title: "Time to bust out the old toolbox. Gotta build it!",
+                    result: 2
+                }, 
+                {
+                    title: "Visit Ikea and buy one.",
+                    result: 3
+                }
+            ]
+        },
+        {
+            title: "It's your friend's birthday, and you're writing a post. How does it look?",
+            options: [
+                {
+                    title: "Super long. Sooo many memories!",
+                    result: 3
+                }, 
+                {
+                    title: "'Happy birthday dude!' - short and simple.",
+                    result: 1
+                }
+            ]
         }
     ],
     results: [
         {
             title: 'JavaScript',
-            img: '',
-            description: 'You\'re a nice easy going person like JavaScript'
+            img: '/img/js.png',
+            description: "You're an easy going, no frills person. You like to deal with life as it happens, and are willing to tackle problems in any shape or form. Just like JavaScript, which doesn't ask you what type your variables are. It just goes with the flow. You're also not afraid make mistakes, as you know making mistakes is a great way to learn. JavaScript is also like that - it provides very little type checking."
         },
         {
             title: 'Python',

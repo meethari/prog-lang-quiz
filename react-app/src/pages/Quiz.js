@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import quizData from '../assets/quizData'
@@ -18,18 +18,41 @@ const QuizBody = () => {
     // array with length of # of questions
     const [choices, setChoices] = useState(Array(quizData.questions.length).fill(-1))
 
+    const errorMessage = () => {
+        var unansweredQuestions = ""
+        for (var i = 0; i < choices.length; i++) {
+            if (choices[i] === -1) {
+                unansweredQuestions += String(i + 1) + " "
+            }
+        }
+        return "Please answer the following questions: " + unansweredQuestions
+    }
+
+    const formComplete = () => {
+        for (var i = 0; i < choices.length; i++) {
+            if (choices[i] === -1) {
+                return false
+            }
+        }
+        return true
+    }
+
+    const evalResult = () => {
+        // TODO: add the result evaluation
+        return 0
+    }
+
     return (
         <div id='quizbody'>
             <div id='quizbody__alertcontainer'>
                 <div id='quizbody__alert'>
-                    Hi
                 </div>
             </div>
             <div id='questionlist'>
                 {quizData.questions.map((question, questionNum) => (<Question key={questionNum} questionNum={questionNum} question={question} choices={choices} setChoices={setChoices}/>))}
             </div>
             <div id='quizbody__submitrow'>
-                <button id='quizbody__submit' className='submit'>Submit</button>
+                {formComplete() ? <Link to={`/result/${evalResult()}/${name}`}><button id='quizbody__submit' className='submit'>Submit</button></Link> : <button id='quizbody__submit' className='submit' onClick={() => {alert(errorMessage())}}>Submit</button>}
             </div>
         </div>
     )
